@@ -414,4 +414,4 @@ $pages = array(
 Try passing this array to the class and see what it generates.
 
 ## License
-The MIT License (MIT)
+[The MIT License (MIT)](https://github.com/jeremyHixon/rational-option-page/blob/master/LICENSE)
