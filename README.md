@@ -13,6 +13,9 @@ if ( is_admin() ) {
 ```
 
 ## Configuration
+
+I recommend using underscores as separators in all your slugs and IDs to keep it consistent. I haven't tested it extensively with hyphens. But they might work.
+
 ### Pages
 The class builds your option page based off of a multidimensional associative array that you define. To get your top level page set up you would use something like this:
 
