@@ -415,7 +415,7 @@ Try passing this array to the class and see what it generates.
 
 ## Retrieving Data
 
-The data is stored like all other options in the `wp_options` table. It can be retrieved using the `get_option()` function and passing the `menu_slug` of the page where the field(s) are located. Read more: https://codex.wordpress.org/Function_Reference/get_option
+The data is stored like all other options in the `wp_options` table. It can be retrieved using the `get_option()` function and passing the `menu_slug` of the page where the field(s) are located with an underscore prepended and the string `_options` appended. For example, if your page's menu slug is `sample_page` you would retrieve the values by calling `get_option( '_sample_page_options' )`. This will return an array with your stored values. Read more: https://codex.wordpress.org/Function_Reference/get_option
 
 ## License
 [The MIT License (MIT)](https://github.com/jeremyHixon/rational-option-page/blob/master/LICENSE)
