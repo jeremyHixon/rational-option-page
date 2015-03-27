@@ -413,5 +413,9 @@ $pages = array(
 
 Try passing this array to the class and see what it generates.
 
+## Retrieving Data
+
+The data is stored like all other options in the `wp_options` table. It can be retrieved using the `get_option()` function and passing the `menu_slug` of the page where the field(s) are located. Read more: https://codex.wordpress.org/Function_Reference/get_option
+
 ## License
 [The MIT License (MIT)](https://github.com/jeremyHixon/rational-option-page/blob/master/LICENSE)
