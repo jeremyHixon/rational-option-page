@@ -65,6 +65,34 @@ class RationalOptionPages {
 				),
 			),
 		),
+/*
+	//	A new options page
+		array(
+			'page_title'	=> 'Page Title',
+			'menu_title'	=> 'Menu Title',
+			'capability'	=> 'manage_options',
+			'menu_slug'		=> 'menu_slug',
+			'icon_url'		=> '',
+			'position'		=> 99,
+			'sections'		=> array(
+	//			A new section
+				array(
+					'id'	=> 'section_id',
+					'title'	=> 'Section Title',
+					'fields'		=> array(
+	//					A new field
+						array(
+							'id'	=> 'field_id',
+							'title'	=> 'Field Title',
+							'type'	=> 'text',
+							'description' => 'Description.',
+							'value' => 'Value',
+						),
+					),
+				),
+			),
+		),
+*/
 	);
 	private $options;
 	private $has_file = false;
