@@ -13,6 +13,9 @@ if ( is_admin() ) {
 ```
 
 ## Configuration
+
+I recommend using underscores as separators in all your slugs and IDs to keep it consistent. I haven't tested it extensively with hyphens. But they might work.
+
 ### Pages
 The class builds your option page based off of a multidimensional associative array that you define. To get your top level page set up you would use something like this:
 
@@ -412,6 +415,10 @@ $pages = array(
 ```
 
 Try passing this array to the class and see what it generates.
+
+## Retrieving Data
+
+The data is stored like all other options in the `wp_options` table. It can be retrieved using the `get_option()` function and passing the `menu_slug` of the page where the field(s) are located with an underscore prepended and the string `_options` appended. For example, if your page's menu slug is `sample_page` you would retrieve the values by calling `get_option( '_sample_page_options' )`. This will return an array with your stored values. Read more: https://codex.wordpress.org/Function_Reference/get_option
 
 ## License
 [The MIT License (MIT)](https://github.com/jeremyHixon/rational-option-page/blob/master/LICENSE)
