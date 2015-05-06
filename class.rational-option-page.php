@@ -140,13 +140,14 @@ class RationalOptionPages {
 								$this->build_field( $field, $page['menu_slug'] );
 
 							} elseif ( isset( $page['subpages'] ) && count( $page['subpages'] ) > 0 ) {
-								foreach ( $page['subpages'] as $subpage ) {
+								// this line seemed to duplicate subpages' content
+								//foreach ( $page['subpages'] as $subpage ) {
 									// See if any of the subpage level items match the request for callback
-									if ( $function === $subpage['menu_slug'] . '_callback' ) {
+									if ( isset( $subpage ) && $function === $subpage['menu_slug'] . '_callback' ) {
 										$this->build_page( $subpage );
 									
 									// See if any of the subpage level items match the request for sanitize
-									} elseif ( $function === $subpage['menu_slug'] . '_sanitize' ) {
+									} elseif ( isset( $subpage ) && $function === $subpage['menu_slug'] . '_sanitize' ) {
 										return $this->sanitize( $subpage, $params[0] );
 
 									// See if any of the subpage level sections or fields match the request
@@ -165,7 +166,7 @@ class RationalOptionPages {
 											}
 										}
 									}
-								}								
+								//}								
 							}
 						}
 					}
