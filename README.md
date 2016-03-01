@@ -1,4 +1,7 @@
 # Rational Option Page Class
+
+[__I've expanded this, cleaned it up a bit and moved it to another repo__](https://github.com/jeremyHixon/RationalOptionPages).
+
 Rational Option Page Class is a PHP class used to build option pages for WordPress. You don't need to deal with all the hooks and functions. What you pass to this class is an associative array with your option page's structure and fields.
 
 ## Installation
